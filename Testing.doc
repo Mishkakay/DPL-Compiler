@@ -1,0 +1,71 @@
+Grammar for “.txt” file
+Sentence	               CapitalLetter, EOL
+Paragraphs		  \t, CapitalLetter, EOL
+Strings            	   any string
+NUMBERS	   1,2,3,4,5,6,7,8,9
+OpenBraket	   (
+CloseBraket	   )
+EOL		   .	
+NEWLINE    	  \n 
+NEWLINE              \r
+PLUS		  +
+MINUS		   -
+MULTIPLY	   *
+DIVIDE		   \
+COMMA		   ,
+EQUAL                   =
+Underscore              _
+
+Rules Governing language
+Sentence -> Capital Letter EOL  (each line will begin with a ‘capital letter' and end with an end of line)
+	----------------------------------------
+A paragraph conform to 3 rules; begins with a tabs, followed by a capital letter, ends with an EOL and must be >=3  sentence long
+       \t -> capital letter-> EOL-> >=3 sentence
+       ————————————————————
+ Number -> any string that spells out the digit
+       -----------------------------------------	
+ symbols (+,-,\,*)
+	 operations -> PLUS
+	 operations -> MINUS
+	 operations -> MULTIPLY
+	 operations -> DIVIDE
+	 operations -> NULL
+Hyphenated words-> Changes all hyphens (~) to underscores (_)
+
+
+
+
+Grammar for “.doc” file
+Sentence	               CapitalLetter, EOL
+Paragraphs		   \t, CapitalLetter, EOL
+Strings            	    any string
+Hyphens	                ~
+OpenBraket	    (
+CloseBraket	     )
+EOL		     ;	
+NEWLINE    	    \n 
+NEWLINE                \r
+PLUS		    +
+MINUS		    -
+MULTIPLY	    *
+DIVIDE		    \
+COMMA		    ,
+EQUAL		    =
+Number                    1,2,3,4,5,6,7,8,9
+
+
+Rules Governing language
+Sentence -> Capital Letter EOL  (each line will begin with a ‘capital letter' and end with an end of line)
+----------------------------------------
+A paragraph conform to 3 rules; begins with a tabs and an *, followed by a capital letter, ends with an EOL and must   be >=3  sentence long
+ \t -> capital letter-> EOL-> >=3 sentence
+————————————————————
+ Number -> any digit or combination of digits
+-----------------------------------------	
+ symbols (+,-,\,*)
+ operations -> PLUS
+ operations -> MINUS
+ operations -> MULTIPLY
+ operations -> DIVIDE
+ operations -> NULL
+Hyphenated words-> Changes all underscores (_) to hyphens (~)
