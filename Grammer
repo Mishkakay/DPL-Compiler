@@ -1,4 +1,4 @@
-Grammar for “.txt” file
+                                Grammar for “.txt” file
 Sentence	               CapitalLetter, EOL
 Paragraphs		  \t, CapitalLetter, EOL
 Strings            	   any string
